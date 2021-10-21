@@ -1,0 +1,110 @@
+footer {
+    background: url("../img/footer_background.jpg") no-repeat center center;
+    background-size: cover;
+
+    .footer__content {
+        padding: 8em 0;
+
+        .footer__content-item {
+            padding: 0 $pd-1 !important;
+            margin-bottom: 80px;
+
+            h2 {
+                @include styleText($color-white-1, 1.7em, $fw-4);
+                margin-bottom: 1em;
+            }
+
+            &:last-child {
+                h2 {
+                    margin-bottom: 2.2em;
+                }
+            }
+
+            p {
+                @include styleText($color-white-1, $fs-2, normal);
+
+                span {
+                    padding-left: 0.8em;
+                }
+            }
+
+            .social {
+                @include styleSocial($color-white-1, 0.75em);
+                i:hover {
+                    @include styleTextHover($color-dark-2);
+                }
+            }
+
+            .footer__content-quicklink {
+                ul {
+                    li {
+                        list-style: none;
+                        line-height: 1;
+
+                        border-bottom: $bd-1 solid $color-dark-4;
+                        padding: 0.8em 0;
+                        margin: $mg-3 0;
+
+                        &:first-child {
+                            margin-top: 0;
+                            margin-bottom: $mg-3;
+                        }
+
+                        a {
+                            @include styleText($color-white-1, $fs-2, normal);
+
+                            &:hover {
+                                text-decoration: none;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer__content-about {
+                @extend .footer__content-quicklink;
+            }
+
+            #Email2 {
+                color: white;
+                text-align: center;
+                background-color: transparent;
+
+                height: 3.2em;
+                margin-bottom: 0.5em;
+
+                border-radius: 50px;
+                border: $bd-1 solid $color-brown-2;
+
+                transition: all 500ms ease;
+
+                &::placeholder {
+                    color: $color-white-1;
+                }
+
+                &:focus {
+                    border: $bd-1 solid $color-white-1;
+                    box-shadow: none;
+                }
+            }
+
+            .btn {
+                line-height: 3.1em;
+                letter-spacing: 1px;
+
+                width: 100% !important;
+
+                transition: all 300ms ease;
+
+                @include styleButton($color-white-1, 0.5em, 0, 50px);
+                @include styleText($color-dark-2, 0.8em, $fw-2);
+
+                &:hover {
+                    @include styleTextHover($color-white-1);
+                    @include styleButtonHover($color-white-1);
+                }
+            }
+        }
+    }
+}

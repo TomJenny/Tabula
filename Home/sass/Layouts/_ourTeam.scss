@@ -1,0 +1,64 @@
+.ourTeam {
+    padding: 0 $pd-1;
+
+    background: url("../img/Wave_White_bottom_right_shape_01.png") $color-pink-2 no-repeat center;
+    background-size: cover;
+
+    .container {
+        max-width: 1260px;
+    }
+    .row:first-child {
+        padding-bottom: 40px;
+    }
+    .ourTeam__item {
+        padding: 0 20px;
+
+        .card {
+            background-color: $color-white-1;
+            overflow: hidden;
+
+            border: none;
+            border-radius: $bd-2;
+
+            transition: all 300ms ease;
+
+            &:hover {
+                box-shadow: 0 30px 30px -10px $color-dark-3;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+
+                transition: transform 650ms ease-in-out;
+                transform: scale3d(1, 1, 1);
+
+                &:hover {
+                    transform: scale3d(1.1, 1.1, 1.1);
+                }
+            }
+
+            .card-body {
+                text-align: center;
+
+                padding: 0 $pd-4;
+                margin-top: 20px;
+
+                h4 {
+                    @include styleText($color-pink-1, 0.75rem, $fw-3);
+                    margin-bottom: $mg-4;
+                }
+
+                h2 {
+                    @include styleText($color-dark-1, 1.55rem, $fw-4);
+                    margin-bottom: $mg-4;
+                }
+
+                p {
+                    @include styleText($color-dark-1, 1rem, $fw-1);
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+}

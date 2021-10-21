@@ -1,0 +1,57 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleTextHover($color) {
+    color: $color;
+}
+
+@mixin responsive($screen) {
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "{$screen} isn't in breakpoint";
+    }
+}
+
+@mixin styleButton($bg, $pd-y, $pd-x, $radius) {
+    box-shadow: 0 0 0 3em $bg inset;
+    padding: $pd-y $pd-x;
+    border-radius: $radius;
+    text-decoration: 0;
+}
+
+@mixin styleButtonHover($bg) {
+    box-shadow: 0 0 0 1px $bg inset;
+}
+
+@mixin styleSocial($color, $mg) {
+    & > ul {
+        margin: 0;
+        li {
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+        }
+    }
+    i {
+        color: $color;
+        margin-right: $mg;
+    }
+}
+
+@mixin stylelabel($left, $top, $color) {
+    position: absolute;
+    z-index: 99;
+    left: $left;
+    top: $top;
+    color: $color;
+}

@@ -1,0 +1,550 @@
+.styleInput, .findCourse .findCourse__form #nameTxt, .findCourse .findCourse__form #Email, .findCourse .findCourse__form .custom-select, .findCourse .findCourse__form textarea {
+  position: relative;
+  height: 3.7em;
+  font-size: 0.8em !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  padding: 1em 1em 1em 3.5em !important;
+  margin-bottom: 1rem;
+}
+
+.styleInputFocus, .findCourse .findCourse__form #nameTxt.form-control:focus, .findCourse .findCourse__form #Email.form-control:focus, .findCourse .findCourse__form .custom-select.form-control:focus, .findCourse .findCourse__form textarea.form-control:focus {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px !important;
+  font-size: 400;
+  line-height: 1.8;
+}
+
+body {
+  transition: margin 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+body.pushRight {
+  margin-left: 320px;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+button[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  z-index: 9999999;
+  height: 90px;
+  width: 100%;
+}
+header.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99999999;
+  height: 48px !important;
+}
+header .navbar {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  padding: 0 30px !important;
+}
+header .navbar.container {
+  max-width: 1260px;
+}
+header .navbar-brand {
+  padding: 0;
+  width: 80px;
+  height: 80px;
+}
+header #navbarTabula {
+  flex-grow: 0;
+}
+header #navbarTabula .navbar-brand {
+  visibility: hidden;
+}
+header #navbarTabula .navbar-nav .nav-item {
+  line-height: 80px;
+  padding: 0 50px 0 0;
+}
+header #navbarTabula .navbar-nav .nav-item > .dropdown-menu.hoverShow {
+  display: block;
+  pointer-events: none;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+header #navbarTabula .navbar-nav .nav-item:hover .nav-link::after, header #navbarTabula .navbar-nav .nav-item.active:hover .nav-link::after {
+  transform: scale(1.5);
+}
+header #navbarTabula .navbar-nav .nav-item:hover > .dropdown-menu.hoverShow, header #navbarTabula .navbar-nav .nav-item.active:hover > .dropdown-menu.hoverShow {
+  transform: scale(1);
+  opacity: 1;
+}
+header #navbarTabula .navbar-nav .nav-item .nav-link {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+  position: relative;
+}
+header #navbarTabula .navbar-nav .nav-item .nav-link::after {
+  border-top: 0;
+  border-right: 0;
+  vertical-align: 0;
+  background-color: #b61984;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  z-index: 9999999;
+  transition: 300ms ease all;
+  transform: scale(0);
+}
+header #navbarTabula .navbar-nav .nav-item.active .nav-link::after {
+  transform: scale(1.1);
+}
+header #navbarTabula .navbarContact .btn {
+  box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 1.1em 1.5em;
+  border-radius: 50px;
+  text-decoration: 0;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 500;
+  transition: all 300ms ease;
+}
+header #navbarTabula .navbarContact .btn:hover {
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+header #navbarTabula .navbarContact .btn i {
+  margin-right: 12px;
+}
+header #navbarTabula .navbarContact .btn.scrollButton {
+  box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 0.7em 1.5em;
+  border-radius: 50px;
+  text-decoration: 0;
+}
+header #navbarTabula .navbarContact .btn.scrollButton:hover {
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+header #navbarTabula .navbarContact .social {
+  margin-left: 0.75em;
+}
+header #navbarTabula .navbarContact .social > ul {
+  margin: 0;
+}
+header #navbarTabula .navbarContact .social > ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+}
+header #navbarTabula .navbarContact .social i {
+  color: #000000;
+  margin-right: 0.75em;
+}
+header #navbarTabula .navbarContact .social i:hover {
+  color: #b61984;
+}
+
+@media screen and (max-width: 1199.98px) {
+  header {
+    height: 48px !important;
+  }
+  header .navbar {
+    background-color: #ffffff;
+    height: 48px !important;
+  }
+  header .navbar-brand {
+    visibility: visible !important;
+    height: 48px !important;
+  }
+  header .navbar-brand .img-fluid {
+    height: 48px;
+  }
+  header .navbar-brand.hide {
+    visibility: hidden !important;
+  }
+  header #navbarTabula {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: -320px;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 320px;
+    padding: 0 30px;
+    transition: left 1s cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: #ffffff;
+  }
+  header #navbarTabula.showSideBar {
+    left: 0;
+  }
+  header #navbarTabula .navbar-brand {
+    visibility: visible !important;
+    width: 90px;
+    height: 90px !important;
+    margin-bottom: 60px;
+  }
+  header #navbarTabula .navbar-brand .img-fluid {
+    width: 90px;
+    height: 90px;
+  }
+  header #navbarTabula .navbar-nav .nav-item {
+    padding: 0;
+    text-align: center;
+  }
+  header #navbarTabula .navbar-nav .nav-item .nav-link {
+    line-height: 1.1 !important;
+    padding: 1em 2em;
+    border: none;
+    font-weight: 400;
+  }
+  header #navbarTabula .navbar-nav .nav-item .nav-link::after {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    border-radius: 0;
+    position: absolute;
+    bottom: 40%;
+    left: 80% !important;
+    z-index: 9999999;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+  }
+  header #navbarTabula .navbarContact {
+    margin: 2em 0;
+  }
+
+  .navbar-toggler-icon {
+    line-height: 14px;
+    height: auto;
+    width: 24px;
+  }
+  .navbar-toggler-icon .line1,
+  .navbar-toggler-icon .line2,
+  .navbar-toggler-icon .line3 {
+    background-color: #000000;
+    width: 24px;
+    height: 2px;
+    margin: 8px 0;
+    transition: 0.3s;
+  }
+  .navbar-toggler-icon:active .line1,
+  .navbar-toggler-icon:active .line2,
+  .navbar-toggler-icon:active .line3, .navbar-toggler-icon:focus .line1,
+  .navbar-toggler-icon:focus .line2,
+  .navbar-toggler-icon:focus .line3 {
+    background-color: #b61984;
+  }
+  .navbar-toggler-icon.change .line1 {
+    background-color: #b61984;
+    transform: rotate(-45deg) translate(-5px, 6px);
+    -webkit-transition: 0.3s ease;
+  }
+  .navbar-toggler-icon.change .line2 {
+    opacity: 0;
+  }
+  .navbar-toggler-icon.change .line3 {
+    background-color: #b61984;
+    transform: rotate(45deg) translate(-8px, -9px);
+    -webkit-transition: 0.3s ease;
+  }
+}
+.carousel {
+  padding: 4em 0 !important;
+  background: url("../img/Violet_top_left_wave.png") no-repeat left bottom, url("../img/yellow_top_wave_01.png") no-repeat left top;
+  background-size: contain;
+}
+.carousel .row {
+  padding: 0 30px;
+}
+.carousel .row.container {
+  max-width: 1200px;
+}
+.carousel .row .carousel__content {
+  margin: 4em 0;
+}
+.carousel .row .carousel__content h5 {
+  color: #b61984;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.carousel .row .carousel__content h1 {
+  color: #000000;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .carousel .carousel__content h1 {
+    font-size: 3.5rem !important;
+  }
+}
+.ourTeam {
+  padding: 0 30px;
+  background: url("../img/Wave_White_bottom_right_shape_01.png") #dcd1f0 no-repeat center;
+  background-size: cover;
+}
+.ourTeam .container {
+  max-width: 1260px;
+}
+.ourTeam .row:first-child {
+  padding-bottom: 40px;
+}
+.ourTeam .ourTeam__item {
+  padding: 0 20px;
+}
+.ourTeam .ourTeam__item .card {
+  background-color: #ffffff;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+.ourTeam .ourTeam__item .card:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.ourTeam .ourTeam__item .card img {
+  width: 100%;
+  height: auto;
+  transition: transform 650ms ease-in-out;
+  transform: scale3d(1, 1, 1);
+}
+.ourTeam .ourTeam__item .card img:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.ourTeam .ourTeam__item .card .card-body {
+  text-align: center;
+  padding: 0 2em;
+  margin-top: 20px;
+}
+.ourTeam .ourTeam__item .card .card-body h4 {
+  color: #b61984;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+.ourTeam .ourTeam__item .card .card-body h2 {
+  color: #000000;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+}
+.ourTeam .ourTeam__item .card .card-body p {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.findCourse {
+  background: url("../img/accent_bottom_wave_01.png") no-repeat center bottom;
+  background-size: cover;
+}
+.findCourse .container {
+  max-width: 1000px;
+}
+.findCourse .findCourse__content {
+  padding-top: 56px;
+}
+.findCourse .findCourse__content img {
+  margin: 4em 0;
+}
+.findCourse .findCourse__form {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0 25px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.findCourse .findCourse__form h1 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: #000000;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+.findCourse .findCourse__form label[for="nameTxt"] {
+  position: absolute;
+  z-index: 99;
+  left: 18px;
+  top: 7px;
+  color: #b61984;
+}
+.findCourse .findCourse__form label[for="Email"] {
+  position: absolute;
+  z-index: 99;
+  left: 18px;
+  top: 8px;
+  color: #b61984;
+}
+.findCourse .findCourse__form .fa-graduation-cap {
+  position: absolute;
+  z-index: 99;
+  left: 16px;
+  top: 13px;
+  color: #b61984;
+}
+.findCourse .findCourse__form label[for="messageTxt"] {
+  position: absolute;
+  z-index: 99;
+  left: 16px;
+  top: 8px;
+  color: #b61984;
+}
+.findCourse .findCourse__form textarea {
+  height: 90px;
+  width: 100%;
+}
+.findCourse .findCourse__form .btn {
+  height: 4em;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 0 0;
+  border-radius: 50px;
+  text-decoration: 0;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 300ms ease;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  letter-spacing: 1px;
+}
+.findCourse .findCourse__form .btn:hover {
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+footer {
+  background: url("../img/footer_background.jpg") no-repeat center center;
+  background-size: cover;
+}
+footer .footer__content {
+  padding: 8em 0;
+}
+footer .footer__content .footer__content-item {
+  padding: 0 30px !important;
+  margin-bottom: 80px;
+}
+footer .footer__content .footer__content-item h2 {
+  color: #ffffff;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+footer .footer__content .footer__content-item:last-child h2 {
+  margin-bottom: 2.2em;
+}
+footer .footer__content .footer__content-item p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+footer .footer__content .footer__content-item p span {
+  padding-left: 0.8em;
+}
+footer .footer__content .footer__content-item .social > ul {
+  margin: 0;
+}
+footer .footer__content .footer__content-item .social > ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+}
+footer .footer__content .footer__content-item .social i {
+  color: #ffffff;
+  margin-right: 0.75em;
+}
+footer .footer__content .footer__content-item .social i:hover {
+  color: #181818;
+}
+footer .footer__content .footer__content-item .footer__content-quicklink ul li, footer .footer__content .footer__content-item .footer__content-about ul li {
+  list-style: none;
+  line-height: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.8em 0;
+  margin: 12px 0;
+}
+footer .footer__content .footer__content-item .footer__content-quicklink ul li:first-child, footer .footer__content .footer__content-item .footer__content-about ul li:first-child {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+footer .footer__content .footer__content-item .footer__content-quicklink ul li a, footer .footer__content .footer__content-item .footer__content-about ul li a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+footer .footer__content .footer__content-item .footer__content-quicklink ul li a:hover, footer .footer__content .footer__content-item .footer__content-about ul li a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+footer .footer__content .footer__content-item #Email2 {
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  height: 3.2em;
+  margin-bottom: 0.5em;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 500ms ease;
+}
+footer .footer__content .footer__content-item #Email2::placeholder {
+  color: #ffffff;
+}
+footer .footer__content .footer__content-item #Email2:focus {
+  border: 1px solid #ffffff;
+  box-shadow: none;
+}
+footer .footer__content .footer__content-item .btn {
+  line-height: 3.1em;
+  letter-spacing: 1px;
+  width: 100% !important;
+  transition: all 300ms ease;
+  box-shadow: 0 0 0 3em #ffffff inset;
+  padding: 0.5em 0;
+  border-radius: 50px;
+  text-decoration: 0;
+  color: #181818;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+footer .footer__content .footer__content-item .btn:hover {
+  color: #ffffff;
+  box-shadow: 0 0 0 1px #ffffff inset;
+}
+
+/*# sourceMappingURL=main.css.map */

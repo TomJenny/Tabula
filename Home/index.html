@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabula Demo</title>
+    <!-- FONT MONTSERRAT AND ROBOTO-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- BOOTRAP 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+     <!-- AOS CSS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+        <header>
+            <nav class="navbar navbar-expand-xl justify-content-xl-between justify-content-start container">
+                <a class="navbar-brand order-1 order-xl-0 " href="">
+                    <img src="./img/crest.png" class="img-fluid" alt="crest">
+                </a>
+                <!--data-toggle="collapse" data-target="#navbarTabula"  -->
+                <button class="navbar-toggler order-0 order-xl-1" type="button" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </span>
+                </button>
+    
+                <div class="collapse navbar-collapse show" id="navbarTabula">
+                    <a class="navbar-brand d-flex mx-auto" href="#">
+                        <img src="./img/crest.png" class="img-fluid" alt="crest">
+                    </a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Home
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Courses
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Blog
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Elements
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbarContact d-flex flex-md-wrap align-items-center justify-content-center">
+                        <a href="#" class="btn">
+                            <i class="fa fa-phone"></i>
+                            <span>(+1) 555 234-8765</span>
+                        </a>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>                        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+   
+        <section class="carousel">    
+            <div class="row container mx-auto">
+                <div class="carousel__content col-lg-6 col-md-12 align-self-center p-0" data-aos="fade-right">
+                    <h5>ABOUT US</h5>
+                    <h1>The language teaching experts</h1>
+                </div>
+                <div class="carousel__img col-lg-6 col-md-12 p-0 " data-aos="fade">
+                    <img class="img-fluid" src="./img/hero_team.png" alt="hero_team">
+                </div>
+            </div>
+    </section>
+        <section class="ourTeam p-0">
+        <div class="ourTeam__content container">
+            <div class="row ourTeam__group-1">
+            </div>
+            <div class="row ourTeam__group-2">
+            </div>
+        </div>
+    </section>
+        <section class="findCourse">
+            <div class="findCourse__content container">
+                <div class="row">
+                    <div class="col-12 col-lg-7" data-aos="fade-right">
+                            <img class="img-fluid" src="./img/conatct_inner.png" alt="conatct_inner">
+                    </div>
+                    <div class="findCourse__form col-12 col-lg-5 text-center align-self-center" data-aos="fade" data-aos-delay="400">
+                        <h1>Find Your Course</h1>
+                        <form>
+                            <div class="row mx-0">
+                                <div class="form-group col-md-6 pr-1 p-0">
+                                    <label for="nameTxt">
+                                        <i class="far fa-user"></i>
+                                    </label>
+                                    <input type="text" class="form-control" id="nameTxt" aria-describedby="emailHelp" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6 pl-1 p-0">
+                                        <label for="Email">
+                                            <i class="far fa-envelope"></i>
+                                        </label>
+                                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="E-mail">
+                                        </div>
+                            </div>
+                            <div class="row mx-0 position-relative">
+                                <i class="fas fa-graduation-cap"></i>
+                                <select class="custom-select form-control">
+                                    <option selected>English</option>
+                                    <option>French</option>
+                                    <option>Spanish</option>
+                                    <option>German</option>
+                                  </select>
+                            </div>
+                            <div class="row mx-0 position-relative">
+                                <label for="messageTxt">
+                                    <i class="far fa-comment-alt"></i>
+                                </label>
+                                <textarea placeholder="Message" class="form-control"></textarea>
+                            </div>
+                            <div class="row mx-0 col-12 col-md-3 col-lg-5 p-0">
+                                    <button type="submit" class="btn form-control">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+         
+        </section>
+        <footer>
+            <div class="footer__content container">
+                <div class="row">
+                    <div class="footer__content-item col-lg-3 col-md-6">
+                        <h2>Contact us</h2>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Franklin St, Greenpoint Ave</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span>+2342 5446 67</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            <span>Monday - Friday: 8 AM - 5 PM</span>
+                        </p>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>                        
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__content-item col-lg-3 col-md-6">
+                        <h2>Quick Links</h2>
+                        <div class="footer__content-quicklink">
+                            <ul>
+                                <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                                <li>
+                                <a href="#">
+                                    Courses
+                                </a>
+                            </li>
+                                <li>
+                                <a href="#">
+                                    Schedule
+                                </a>
+                            </li>
+                                <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="footer__content-item col-lg-3 col-md-6">
+                        <h2>About</h2>
+                        <div class="footer__content-about">
+                            <ul>
+                                <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                                <li>
+                                <a href="#">
+                                    Events
+                                </a>
+                            </li>
+                                <li>
+                                <a href="#">
+                                    Get Quote
+                                </a>
+                            </li>
+                                <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__content-item col-lg-3 col-md-6">
+                        <h2>Newsletter</h2>
+                        <input type="email" class="form-control" id="Email2" aria-describedby="emailHelp" placeholder="Your email">
+                        <button type="submit" class="btn">SUBSCRIBE</button>
+    
+                    </div>
+    
+                    </div>
+                <p class="text-white"> This website is cloned for educational purposes.</p>
+
+                </div>
+                
+        </footer>
+
+    <!-- BS4 LIBRARY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+        integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+       
+     <!-- AXIOS LIBRARY -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   
+     <!-- ANIME LIBRARY -->
+    <script src="../Home/js/anime.min.js"></script>
+
+    <!-- AOS LIBRARY -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-- MAIN -->
+    <script src="../Admin/app/services/UserServices.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

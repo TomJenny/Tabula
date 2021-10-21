@@ -1,0 +1,62 @@
+//color
+$color-dark-1: #000000;
+$color-dark-2: #181818;
+$color-dark-3: rgba(0, 0, 0, 0.2);
+$color-dark-4: rgba(0, 0, 0, 0.1);
+$color-dark-5: rgba(0, 0, 0, 0.3);
+
+$color-brown-1: rgba(204, 204, 204, 0.5);
+$color-brown-2: rgba(255, 255, 255, 0.1);
+
+$color-white-1: #ffffff;
+
+$color-pink-1: #b61984;
+$color-pink-2: #dcd1f0;
+
+//font size
+$fs-1: 0.8em;
+$fs-2: 0.9rem;
+
+//font weight
+$fw-1: 400;
+$fw-2: 500;
+$fw-3: 600;
+$fw-4: 700;
+
+//Padding
+$pd-1: 30px;
+$pd-2: 1em;
+$pd-3: 1.5em;
+$pd-4: 2em;
+$pd-5: 4em;
+
+//Margin
+$mg-1: 0.75em;
+$mg-2: 2em;
+$mg-3: 12px;
+$mg-4: 0.7em;
+
+//border
+$bd-1: 1px;
+$bd-2: 10px;
+$bd-3: 50px;
+
+// height
+$height-1: 48px;
+$height-2: 90px;
+
+//width
+$width-1: 90px;
+$width-2: 24px;
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+);

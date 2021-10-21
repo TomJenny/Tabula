@@ -1,0 +1,90 @@
+.findCourse {
+    background: url("../img/accent_bottom_wave_01.png") no-repeat center bottom;
+    background-size: cover;
+
+    .container {
+        max-width: 1000px;
+    }
+    .findCourse__content {
+        padding-top: 56px;
+
+        img {
+            margin: 4em 0;
+        }
+    }
+    .findCourse__form {
+        background-color: $color-white-1;
+        overflow: hidden;
+
+        border-radius: $bd-2;
+
+        padding: 0 25px;
+
+        box-shadow: 0 30px 30px -10px $color-dark-3;
+
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 50px;
+
+            @include styleText($color-dark-1, 2.7rem, $fw-4);
+        }
+        #nameTxt {
+            @extend .styleInput;
+
+            &.form-control:focus {
+                @extend .styleInputFocus;
+            }
+        }
+        #Email {
+            @extend .styleInput;
+
+            &.form-control:focus {
+                @extend .styleInputFocus;
+            }
+        }
+        .custom-select {
+            @extend .styleInput;
+
+            &.form-control:focus {
+                @extend .styleInputFocus;
+            }
+        }
+        label[for="nameTxt"] {
+            @include stylelabel(18px, 7px, $color-pink-1);
+        }
+        label[for="Email"] {
+            @include stylelabel(18px, 8px, $color-pink-1);
+        }
+        .fa-graduation-cap {
+            @include stylelabel(16px, 13px, $color-pink-1);
+        }
+        label[for="messageTxt"] {
+            @include stylelabel(16px, 8px, $color-pink-1);
+        }
+        textarea {
+            height: 90px;
+            width: 100%;
+
+            @extend .styleInput;
+
+            &.form-control:focus {
+                @extend .styleInputFocus;
+            }
+        }
+        .btn {
+            height: 4em;
+            @include styleButton($color-pink-1, 0, 0, $bd-3);
+            @include styleText($color-white-1, 0.9rem, $fw-3);
+            &:hover {
+                @include styleTextHover($color-pink-1);
+                @include styleButtonHover($color-pink-1);
+            }
+
+            transition: all 300ms ease;
+            margin-top: $mg-2;
+            margin-bottom: 3em;
+
+            letter-spacing: 1px;
+        }
+    }
+}
